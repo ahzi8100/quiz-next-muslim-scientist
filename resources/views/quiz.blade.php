@@ -57,8 +57,9 @@
             <div x-show="step === 'result'" class="text-center" x-cloak>
                 <div class="relative inline-block mb-6">
                     <div class="absolute inset-0 bg-emerald-200 rounded-full blur-2xl opacity-50"></div>
-                    <img :src="`/img/scientists/${winner.toLowerCase().replace(/ /g, '-')}.jpg`" :alt="winner"
-                        class="relative w-40 h-40 rounded-full border-4 border-emerald-500 object-cover mx-auto shadow-xl">
+                    <img :src="`{{ asset('img/scientists') }}/${winner.toLowerCase().replace(/ /g, '-')}.jpg`"
+                        :alt="winner"
+                        class="relative w-48 h-48 rounded-xl border-4 border-emerald-500 object-cover mx-auto shadow-xl">
                 </div>
 
                 <p class="text-emerald-600 font-bold tracking-widest uppercase text-sm mb-1">Masa Depanmu Adalah</p>
